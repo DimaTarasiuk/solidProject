@@ -4,6 +4,11 @@ public class Animal {
     private String name;
     private Integer age;
 
+    public Animal(String name, Integer age){
+        this.name = name;
+        this.age = age;
+    }
+
     public String getName(){
         return name;
     }
@@ -21,6 +26,11 @@ public class Animal {
     }
 
     public void speak(){
-        System.out.println("no sound");
+    }
+    public void printInfo(){
+        System.out.println("I am a " + this.getClass().getSimpleName());
+        System.out.println("my name is " + getName()+" and I am " + getAge() + " years old.");
+        speak();
+        System.out.println("------------------------");
     }
 }
