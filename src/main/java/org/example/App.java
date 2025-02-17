@@ -12,8 +12,8 @@ public class App
         Animal dog = new Dog("Rex",3);
         Animal parrot = new Parrot("Parrot", 12);
 
-        cat.printInfo();
-        dog.printInfo();
-        parrot.printInfo();
+        AnimalPrineter.printInfo(cat);
+        AnimalPrineter.printInfo(dog);
+        AnimalPrineter.printInfo(parrot);
     }
 }

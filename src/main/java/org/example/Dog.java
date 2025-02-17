@@ -1,6 +1,6 @@
 package org.example;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements Speakable{
 
 
     public Dog(String name, Integer age) {

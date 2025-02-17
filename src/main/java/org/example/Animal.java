@@ -24,13 +24,4 @@ public class Animal {
     public void setAge(Integer age) {
         this.age = age;
     }
-
-    public void speak(){
-    }
-    public void printInfo(){
-        System.out.println("I am a " + this.getClass().getSimpleName());
-        System.out.println("my name is " + getName()+" and I am " + getAge() + " years old.");
-        speak();
-        System.out.println("------------------------");
-    }
 }
