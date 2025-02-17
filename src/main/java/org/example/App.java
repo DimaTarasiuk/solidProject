@@ -12,8 +12,11 @@ public class App
         Animal dog = new Dog("Rex",3);
         Animal parrot = new Parrot("Parrot", 12);
 
-        AnimalPrineter.printInfo(cat);
-        AnimalPrineter.printInfo(dog);
-        AnimalPrineter.printInfo(parrot);
+        AnimalInfoFormatter textFormater = new TextAnimalFormatter();
+        AnimalInfoFormatter jsonFormater = new JsonAnimalFormatter();
+
+        System.out.println(textFormater.formatInfo(cat));
+        System.out.println(textFormater.formatInfo(dog));
+        System.out.println(jsonFormater.formatInfo(parrot));
     }
 }
